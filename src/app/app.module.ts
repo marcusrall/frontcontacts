@@ -8,13 +8,19 @@ import { SidebarComponent } from './sidebar/sidebar.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { ContactsComponent } from './contacts/contacts.component';
 import { routing } from './app.routing';
+import { CategoriesComponent } from './categories/categories.component';
+import { DetailContactComponent } from './detail-contact/detail-contact.component';
+
+import { ContactsService } from './contacts/contacts.service';
 
 @NgModule({
   declarations: [
     AppComponent,
     SidebarComponent,
     NavbarComponent,
-    ContactsComponent
+    ContactsComponent,
+    CategoriesComponent,
+    DetailContactComponent
   ],
   imports: [
     BrowserModule,
@@ -22,7 +28,7 @@ import { routing } from './app.routing';
     HttpModule,
     routing
   ],
-  providers: [],
+  providers: [ ContactsService ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

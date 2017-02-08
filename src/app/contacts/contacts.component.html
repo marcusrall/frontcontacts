@@ -1,3 +1,13 @@
-<p>
+<br>
+<p class="alert alert-success">
   contacts works!
 </p>
+<div class="card" style="width: 20rem; float: left; margin: 18px;" *ngFor="let contact of contacts">
+  <img class="card-img-top" src="http://placekitten.com/g/300/300" alt="Card image cap">
+  <div class="card-block">
+    <h4 class="card-title">{{ contact.name }}</h4>
+    <p class="card-text" style="font-weight: bold;">{{ contact.company }}</p>
+    <p class="card-text">{{ contact.email }}</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div>
