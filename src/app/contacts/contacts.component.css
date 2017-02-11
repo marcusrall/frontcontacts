@@ -1,3 +1,13 @@
 p{
   margin-bottom: 5px;
 }
+
+h4{
+  font-size: 15px;
+  font-weight: bold;
+  min-height: 35px;
+}
+
+.paginacao{
+  clear: both;
+}
